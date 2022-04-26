@@ -1,4 +1,7 @@
-.PHONY: build
+.PHONY: build run
 
-all:
+build:
 	docker build -t security .
+
+run:
+	docker run -it --rm security bash
